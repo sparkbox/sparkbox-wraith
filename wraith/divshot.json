@@ -1,0 +1,6 @@
+{
+  "name": "appName",
+  "root": "./shots",
+  "clean_urls": true,
+  "error_page": "error.html"
+}

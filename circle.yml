@@ -1,0 +1,11 @@
+general:
+  artifacts:
+    - "wraith/shots" # relative to the build directory
+
+deployment:
+  staging:
+    branch: master
+    commands:
+      - ./node_modules/.bin/divshot deploy staging --token $DivshotToken
+      - node wraith-init.js
+      - "cd wraith/ && mv shots/gallery.html shots/index.html && ../node_modules/.bin/divshot deploy staging --token $WraithDivshot"

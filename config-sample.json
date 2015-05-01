@@ -1,0 +1,5 @@
+{
+  "slackToken": "TOKEN",
+  "slackChannel": "CHANNELID",
+  "divshotURL": "DIVSHOTURL"
+}

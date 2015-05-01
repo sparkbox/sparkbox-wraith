@@ -1,0 +1,15 @@
+{
+  "name": "sparkbox-wraith",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wraith-init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "shelljs": "^0.4.0",
+    "slack-client": "^1.4.0"
+  }
+}
