@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "divshot": "^0.4.8",
     "shelljs": "^0.4.0",
     "slack-client": "^1.4.0"
   }
