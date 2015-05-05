@@ -1,6 +1,6 @@
 ![sparkbox-wraith](http://i.imgur.com/DUomwIl.jpg)
 
-sparkbox-wraith is a tool that glues together a few excellent services to provide notifications when builds have significat visual differences. 
+sparkbox-wraith is a tool that glues together a few excellent services to provide notifications when builds have significant visual differences. 
 sparkbox-wraith wouldn't be possible without:
 
   - [BBC-News Wraith](https://github.com/BBC-News/wraith) project
