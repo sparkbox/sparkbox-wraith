@@ -1,4 +1,4 @@
-![sparkbox-wraith](http://i.imgur.com/IyY0wP4.jpg)
+![sparkbox-wraith](http://i.imgur.com/DUomwIl.jpg)
 
 sparkbox-wraith is a tool that glues together a few excellent services to provide notifications when builds have significat visual differences. 
 sparkbox-wraith wouldn't be possible without:
