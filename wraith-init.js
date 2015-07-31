@@ -4,14 +4,15 @@ var shelljs = require('shelljs'),
     autoReconnect = true,
     autoMark = true;
 
-if (shelljs.exec('bundle exec wraith capture wraith/wraith.yaml').code !== 0) {
-  var slack = new Slack(config.slackToken, autoReconnect, autoMark);
+var slack = new Slack(config.slackToken, autoReconnect, autoMark);
 
-  slack.on("open", function() {
-    var channel = slack.getChannelByName(config.slackChannel);
-    channel.send('<!channel> There are significant visual changes, please review - ' + config.divshotURL);
-    shelljs.exit(0);
-  });
+slack.on("open", function() {
+  var channel = slack.getChannelByName(config.slackChannel);
 
-  slack.login();
-}
+  if (shelljs.exec('bundle exec wraith capture wraith.yaml').code !== 0) {
+    channel.send('<!channel> there are significant visual changes, please review - ' + config.divshotURL);
+    setTimeout(function(){shelljs.exit(0);}, 1000);
+  }
+});
+
+slack.login();
